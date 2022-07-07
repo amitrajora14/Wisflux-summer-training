@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<label for="">1st Number</label>
+<input type="number" name="" id="input1">
+<label for="">2nd Number</label>
+<input type="number" name=""  id="input2">
+<button type="submit" onclick="add()">add</button>
+<button type="submit" onclick="mul()">Multiply</button>
+
+
+    <div id="add"></div>
+    <div id="mul"></div>
+
+
+<script>
+    function add(){
+        
+        var input1 =parseInt(document.getElementById('input1').value)
+        var input2 = parseInt(document.getElementById('input2').value)
+
+        
+         result = input1+input2
+        var showdata = document.getElementById('add').innerText = result
+    }
+ function mul(){
+    
+    var input1 =parseInt(document.getElementById('input1').value)
+        var input2 = parseInt(document.getElementById('input2').value)
+        result = input1*input2
+        var showdata = document.getElementById('add').innerText = result
+
+ }
+
+
+    
+</script>
+</body>
+</html>
